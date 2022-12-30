@@ -1,0 +1,33 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+.contato{
+    height: 385px;
+    width: 100%;
+    background-color: $bg-color-secondary;
+    @include center;
+    flex-direction: column;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: 12px;
+        @include center;
+
+        textarea{
+            border-radius: 15px;
+            padding: 10px;
+            outline: none;
+            height: 68px;
+            width: 334px;
+        }
+
+        button{
+            @include center;
+            @include btn;
+            border: 1px solid white;
+            margin-top: 7px;
+        }
+    }
+}
