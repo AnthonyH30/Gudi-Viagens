@@ -1,0 +1,20 @@
+@import 'variables.scss';
+
+@mixin dash{
+    width: 37px;
+    height: 0px;
+    background-color: $bg-color;
+    margin-right: 11px;
+}
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn{
+    width: 110px;
+    height: 29px;
+    border-radius: 15px;
+}
