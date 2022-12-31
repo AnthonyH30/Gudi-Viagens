@@ -19,16 +19,8 @@
         margin-top: 14px;
 
         button{
-            @include btn;
+            @include btn(700, $text-color-secondary, $bg-color-secondary);
             @include center;
-            color: $text-color-secondary;
-            background-color: $bg-color-secondary;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: bold;
-            font-size: 10px;
-            border: none;
-
             margin-top: 17px;
         }
     }

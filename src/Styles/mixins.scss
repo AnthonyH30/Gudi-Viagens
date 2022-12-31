@@ -13,10 +13,17 @@
     align-items: center;
 }
 
-@mixin btn{
+@mixin btn($fontWeight, $color, $bgColor){
     width: 110px;
     height: 29px;
     border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: $fontWeight;
+    font-size: 10px;
+    color: $color;
+    background-color: $bgColor;
+    border: none;
 }
 
 @mixin listItems{

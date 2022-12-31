@@ -2,15 +2,8 @@
 @import '../../Styles/mixins.scss';
 
 button{
-    @include btn;
+    @include btn(700, $text-color-secondary, $bg-color-secondary);
     @include center;
-    color: $text-color-secondary;
-    background-color: $bg-color-secondary;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 10px;
-    border: none;
     transition: all ease-in 0.2s;
 
     &:hover{
