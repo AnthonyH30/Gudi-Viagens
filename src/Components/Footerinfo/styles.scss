@@ -1,0 +1,26 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+ul.footerinfos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+
+    li{
+        @include listItems;
+        font-weight: 600;
+    }
+
+    .title{
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 15px;
+
+        &:hover{
+            transform: scale(1);
+            cursor: default;
+        }
+    }
+}

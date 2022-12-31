@@ -1,9 +1,17 @@
 @import 'variables.scss';
+@font-face {
+    font-family: 'Argentum Sans';
+    src: url(../fonts/argentum-sans.regular.ttf),
+    url(../fonts/argentum-sans.bold.ttf),
+    url(../fonts/argentum-sans.medium.ttf);
+}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Argentum Sans', sans-serif;
 }
 
 body{

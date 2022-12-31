@@ -1,0 +1,65 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+.mural{
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    p.subtitle{
+        color: $text-color-gray;
+        font-size: 15px;
+        margin-top: 78px;
+    }
+
+    .gallery{
+        width: 80%;
+        max-width: 630px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 44px;
+
+        img{
+            width: 198px;
+            margin: 6px;
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        max-width: 630px;
+        justify-content: center;
+        margin-top: 48px;
+        margin-bottom: 58px;
+
+        .card-container{
+            width: 140px;
+            height: 165px;
+            background-color: $gray-card-bg;
+            margin-inline: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-block: 20px;
+            text-align: center;
+
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+
+            p.text{
+                font-size: 14px;
+                padding-inline: 25%;
+                color: $text-color;
+            }
+        }
+    }
+}
