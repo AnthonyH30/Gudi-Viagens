@@ -1,0 +1,61 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65vh;
+
+    figure{
+        width: 50%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    aside{
+        padding-left: 50px;
+        margin-right: auto;
+        background: $gradient;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .info-header{
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            .dash{
+                @include dash;
+            }
+
+            p{
+                font-size: 10px;
+                letter-spacing: 3px;
+                color: $text-color-secondary;
+                text-transform: uppercase;
+            }
+        }
+
+        .text-content{
+            .info-subtitle{
+                max-width: 470px;
+                margin-top: 10px;
+                color: $text-color-secondary;
+                font-weight: 500;
+                letter-spacing: 0.29px;
+            }
+
+            .info-btn{
+                @include btn(500, $text-color-secondary, transparent);
+                border: 1px solid white;
+                margin-top: 25px;
+            }
+        }
+    }
+}

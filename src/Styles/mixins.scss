@@ -2,9 +2,10 @@
 
 @mixin dash{
     width: 37px;
-    height: 0px;
+    height: 2px;
     background-color: $bg-color;
     margin-right: 11px;
+    border-radius: 5px;
 }
 
 @mixin center{

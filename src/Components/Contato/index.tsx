@@ -3,7 +3,6 @@ import Input from "../Input";
 import Title from "../Title";
 import './styles.scss';
 
-
 function Contato(){
     return(
         <div className="contato">

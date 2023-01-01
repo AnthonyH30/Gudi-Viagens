@@ -1,0 +1,8 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+.card-city-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
