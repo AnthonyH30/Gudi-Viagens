@@ -1,13 +1,15 @@
-import { memo } from "react"
+import { memo, ReactNode } from "react"
 import Title from "../Title";
 import './styles.scss';
 
 type InfoProps ={
     invert: boolean;
     image: string;
+    title: string;
+    paragraph: ReactNode;
 }
 
-function InfoCard({invert, image}: InfoProps){
+function InfoCard({invert, image, title, paragraph}: InfoProps){
     return(
         <div style={invert ? {flexDirection: 'row-reverse'} : {}} className="info-container">
             <figure style={{backgroundImage: `url(${image})`}}>
@@ -19,8 +21,8 @@ function InfoCard({invert, image}: InfoProps){
                     <p style={invert ? {color: '#005BD5'} : {}}>Viagens Nacionais</p>
                 </div>
                 <div className="text-content">
-                    <Title style={invert ? {color: '#005BD5'} : {color: 'white', fontWeight: 'bold'}} text="O clima perfeito, o lugar perfeito" />
-                    <p style={invert ? {color: '#005BD5'} : {}} className="info-subtitle">Planeje sua viagem com a sua paquera, compartilhar momentos preciosos juntos não tem preço.</p>
+                    <Title style={invert ? {color: '#005BD5'} : {color: 'white', fontWeight: 'bold'}} text={title} />
+                    <p style={invert ? {color: '#005BD5'} : {}} className="info-subtitle">{paragraph}</p>
                     <button style={invert ? {border: '1px solid #005BD5', color: '#005BD5'} : {}} className="info-btn">Agendar</button>
                 </div>
             </aside>

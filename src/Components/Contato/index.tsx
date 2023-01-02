@@ -5,7 +5,7 @@ import './styles.scss';
 
 function Contato(){
     return(
-        <div className="contato">
+        <div className="contato" id="contato">
             <Title style={{color: 'white'}} text="Fale conosco" />
             <form>
                 <Input style={{width: '334px'}} placeholder="Diga o seu melhor email" />

@@ -1,9 +1,8 @@
 @import 'variables.scss';
 @font-face {
     font-family: 'Argentum Sans';
-    src: url(../fonts/argentum-sans.regular.ttf),
-    url(../fonts/argentum-sans.bold.ttf),
-    url(../fonts/argentum-sans.medium.ttf);
+    src: url(../fonts/argentum-sans.regular.ttf);
+    font-weight: 500, 600, 700;
 }
 
 html{
