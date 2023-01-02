@@ -6,7 +6,7 @@ import './styles.scss';
 
 function Banner(){
     return(
-        <div className="banner">
+        <div className="banner" id="sobre">
             <Title style={{color: '#005BD5'}} text="Para qual estado você deseja ir?" />
             <form>    
                 <Input placeholder="Pesquise" />

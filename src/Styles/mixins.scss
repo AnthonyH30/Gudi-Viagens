@@ -38,3 +38,8 @@
         transform: scale(1.05)
     }
 }
+
+@mixin links{
+    color: $text-color;
+    text-decoration: none;
+}

@@ -30,4 +30,12 @@
             margin-top: 7px;
         }
     }
+
+    @media(max-width: 500px){
+        form{
+            textarea{
+                width: 250px !important;
+            }
+        }
+    }
 }

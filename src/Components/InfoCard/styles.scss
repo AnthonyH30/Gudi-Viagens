@@ -6,11 +6,10 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 65vh;
 
     figure{
         width: 50%;
-        height: 100%;
+        height: 350px;
         background-position: center;
         background-size: cover;
     }
@@ -20,10 +19,11 @@
         margin-right: auto;
         background: $gradient;
         width: 50%;
-        height: 100%;
+        height: 350px;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-block: auto;
 
         .info-header{
             display: flex;
@@ -56,6 +56,19 @@
                 border: 1px solid white;
                 margin-top: 25px;
             }
+        }
+    }
+
+    @media(max-width: 790px){
+        flex-direction: column !important;
+
+        figure{
+            width: 100%;
+        }
+
+        aside{
+            width: 100%;
+            padding-left: 25px;
         }
     }
 }

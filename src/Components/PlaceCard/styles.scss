@@ -11,13 +11,19 @@
     .name-box{
         padding: 3px 15px;
         @include center;
-        backdrop-filter: blur(1px);
-        background-color: rgba($color: #000000, $alpha: 0.2);
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         border: 1px solid $text-color-secondary;
         border-radius: 20px;
 
         .city-name{
             color: white;
         }
+    }
+    @media(max-width: 790px) {
+        width: 50%;
     }
 }

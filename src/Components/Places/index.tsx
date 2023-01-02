@@ -29,7 +29,7 @@ function Places(){
     return(
         <section className="card-city-container">
             {placesInfo.map((place) => (
-                <PlaceCard name={place.name} image={place.image} />
+                <PlaceCard key={place.name} name={place.name} image={place.image} />
             ))}
         </section>
     )

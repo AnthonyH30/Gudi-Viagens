@@ -62,4 +62,36 @@
             }
         }
     }
+
+    @media(max-width: 790px){
+        .gallery{
+            justify-content: center;
+            img{
+                width: 40%;
+            }
+        }
+
+        .cards{
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .card-container{
+                margin-inline: 0px;
+            }
+        }
+    }
+
+    @media(max-width: 500px){
+        .gallery img{
+                    width: 100%;
+        }
+
+        .cards{
+            .card-container{
+                width: 48%;
+            }
+        }
+        
+    }
 }

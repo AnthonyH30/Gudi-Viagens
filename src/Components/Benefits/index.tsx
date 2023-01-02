@@ -6,7 +6,7 @@ import image3 from '../../assets/image3.png';
 
 function Benefits(){
     return(
-        <section>
+        <section id="beneficios">
             <InfoCard image={image1} invert={false} />
             <InfoCard image={image2} invert={true} />
             <InfoCard image={image3} invert={false} />
