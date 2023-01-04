@@ -14,7 +14,12 @@ import fourth from "../../assets/fourth.svg";
 
 const images = [image1, image2, image3, image4, image5, image6];
 
-const icons = [
+type IconsProps ={
+    icon: string;
+    text: string;
+}
+
+const icons: IconsProps[] = [
 {
     icon: first,
     text: 'O melhor do Brasil'

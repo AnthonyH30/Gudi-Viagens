@@ -6,7 +6,12 @@ import cn from '../../assets/caldasnovas.png';
 import am from '../../assets/amazonia.png';
 import PlaceCard from "../PlaceCard";
 
-const placesInfo = [
+type PlaceProps ={
+    name: string;
+    image: string;
+}
+
+const placesInfo: PlaceProps[] = [
     {
         name: "Rio de Janeiro",
         image: rj
